@@ -1,0 +1,8 @@
+span.logo {
+  font-family: "Bungee", cursive;
+  color: #FFFF;
+  display: flex;
+  flex-direction: row;
+  background: #4056A1;
+  
+  }
