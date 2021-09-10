@@ -24,6 +24,7 @@ module.exports = function(DataHelpers) {
     }
 
     const user = req.body.user ? req.body.user : userHelper.generateRandomUser();
+    //ternary operator - if req.body.user exists/ is truthy, execute : otherwise/ falsy generateRandomUser
     const tweet = {
       user: user,
       content: {
