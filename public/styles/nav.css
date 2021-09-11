@@ -6,6 +6,8 @@
     display: flex;
     justify-content: space-between;
     font-family: Source-Sans-Pro, Sans-Serif;
+       /* determines the depth of elements in a webpage - as z-index value of an element increases, it will be positioned infront of other elements - overlay */
+       z-index: 1;
   }
 
     /* tweeter icon */
