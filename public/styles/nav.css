@@ -1,13 +1,14 @@
   nav {
-    background-color: #4056A1;
-    color: #FFFFFF;
+    background-color: #BFD8B8;
+    color: #E7EAB5;
     padding-left: 1.5em;
     padding: 0.5em 1.5em;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-family: Source-Sans-Pro, Sans-Serif;
-       /* determines the depth of elements in a webpage - as z-index value of an element increases, it will be positioned infront of other elements - overlay */
-       z-index: 1;
+       /* determines the depth of elements in a webpage - as z-index value of an element increases, it will be positioned infront of other elements - 3D overlay */
+    z-index: 1;
   }
 
     /* tweeter icon */
@@ -29,5 +30,5 @@
   }
   
   .arrow {
-    color: rgb(221, 61, 194);
+    color:#F1F7E7;
   }
