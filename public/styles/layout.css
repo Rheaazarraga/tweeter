@@ -33,5 +33,6 @@ font-family: "Bungee", cursive;
  .container {
    width: 90%;
    background-color: #e9deb0 ;
+   background-image: url("https://www.transparenttextures.com/patterns/psychedelic.png");
    margin: 0;
  }
