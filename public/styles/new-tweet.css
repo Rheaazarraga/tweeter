@@ -8,11 +8,11 @@
     outline: none;
     resize: none;
     white-space: nowrap;
-    overflow-x: scroll;
     background-color: #F4F1EC;
     border: 0;
-    border-bottom-style: none;
-    border-bottom-width: 3px;
+    border-color: #9ECABC;
+    border-radius: 25px;
+    border-bottom-width: 1px;
     padding-bottom: 0px;
     padding-top: 5px;
     margin-bottom: 10px;
