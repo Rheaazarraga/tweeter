@@ -16,7 +16,8 @@ html {
 
 body {
   color: #ffffff;
-  background-color: #f4f1ec;
+  background-color: #e9deb0 ;
+  background-image: url("https://www.transparenttextures.com/patterns/psychedelic.png");
   font-size: 24px;
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -28,3 +29,9 @@ font-family: "Bungee", cursive;
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ .container {
+   width: 90%;
+   background-color: #e9deb0 ;
+   margin: 0;
+ }
