@@ -5,12 +5,8 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #9ecabc;
+  background-color: #9ECABC;
   background-image: url("https://www.transparenttextures.com/patterns/subtle-grunge.png");
-
-
-  
-
 }
 
 .name-text {
