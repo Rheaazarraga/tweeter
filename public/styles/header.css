@@ -5,6 +5,19 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #E2C2B9;
-  background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");
+  background-color: #9ecabc;
+  background-image: url("https://www.transparenttextures.com/patterns/wall-4-light.png");
+  
+  
+  
+  
+
+}
+
+.name-text {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
