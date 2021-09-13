@@ -16,11 +16,13 @@ html {
 
 body {
   color: #ffffff;
-  background-color: #e9deb0 ;
-  background-image: url("https://www.transparenttextures.com/patterns/psychedelic.png");
-  font-size: 24px;
+  background-color: #c785a0 ;
+  font-size: 100%;
   font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
+
 
 span.logo {
 font-family: "Bungee", cursive;
@@ -31,8 +33,9 @@ font-family: "Bungee", cursive;
  */
 
  .container {
-   width: 90%;
-   background-color: #e9deb0 ;
-   background-image: url("https://www.transparenttextures.com/patterns/psychedelic.png");
-   margin: 0;
+   font-size: 100%;
+   width: 16%;
+   background-color: #c785a0 ;
+   justify-content: center;
+   align-self: center;
  }
