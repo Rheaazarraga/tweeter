@@ -9,7 +9,7 @@
 
   /* New tweet title section */
   .new-tweet h2 {
-  border-bottom: 2px solid #5588ca;
+  border-bottom: 2px dotted white;
   }
 
   /* Tweet text box */
@@ -27,27 +27,37 @@
     /* display: center; */
     display: flex;
     flex-direction: column;
-    color: #5588ca;
+    color: #cc8cbe;
+    -webkit-text-stroke: fab47b;
     text-align: center;
     align-self: center;
     font-family: Bungee;
-
   }
+
+    .humming {
+      color: white;
+      text-align: center;
+      align-self: center;
+      font-family: Bungee;
+    }
+
+
   /* character count */
   .charcount-text {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-family: Bungee, sans-serif;
-    color: #5588ca;
+    color: white;
     padding-right: 10px;
     font-size: 10;
   }
 
   /* tweet button */
   .tweet-button {
-    background-color: #5588ca;
+    font-weight: 400;
+    background-color: #cc8cbe;
     color: #FFFFFF;
     border-radius: 8px;
-    padding: 3px;
+    padding: 0.5px;
   } 

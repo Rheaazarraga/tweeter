@@ -5,10 +5,12 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #5588ca;
-  background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png");
-}
-
+  background-color: #cc8cbe;
+  /* background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png"); */
+  /* background-image: url("https://www.transparenttextures.com/patterns/psychedelic.png"); */
+  /* background-image: url("http://www.transparenttextures.com/patterns/grunge-wall.png"); */
+  background-image: url("http://www.transparenttextures.com/patterns/bright-squares.png");
+} 
 .name-text {
   color: #ffffff;
   display: flex;

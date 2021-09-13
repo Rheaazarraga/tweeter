@@ -1,6 +1,6 @@
   nav {
-    background-color: #c785a0 ;
-    /* background-image: url("https://www.transparenttextures.com/patterns/psychedelic.png"); */
+    background-color: #fab47b ;
+    /* background-image: url("https://www.transparenttextures.com/patterns/psychedelic.png");
     /* background-image: url("https://www.transparenttextures.com/patterns/subtle-grey.png"); */
     /* background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png"); */
     padding-left: 1.5em;
@@ -18,7 +18,8 @@
    #logo {
     font-family: Bungee, Sans-Serif;
     font-size: 2em;
-    color: #5588ca;
+    color: white;
+
 
   }
 
@@ -34,6 +35,6 @@
   }
   
   .arrow {
-  color: #5588ca;
+  color: #cc8cbe;
 
   }

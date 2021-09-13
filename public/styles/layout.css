@@ -16,7 +16,7 @@ html {
 
 body {
   color: #ffffff;
-  background-color: #c785a0 ;
+  background-color: #fab47b ;
   font-size: 100%;
   font-family: "Source Sans Pro", sans-serif;
   display: flex;
@@ -35,7 +35,7 @@ font-family: "Bungee", cursive;
  .container {
    font-size: 100%;
    width: 16%;
-   background-color: #c785a0 ;
+   background-color: #fab47b ;
    justify-content: center;
    align-self: center;
  }
