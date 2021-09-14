@@ -25,8 +25,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script type="text/javascript" src="./scripts/client.js"></script>
+    <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
@@ -66,12 +66,12 @@
         <div class="humming">
         <h3><strong>What are you humming about?</strong></h3>
         <form method="POST" action="tweets/">
-          <label for="tweet-text"></label>
-          <textarea name= "text" id="tweet-text"></textarea>
+          <!-- <label for="tweet-text"></label> -->
+          <textarea name= "text" id="tweet-box"></textarea>
           </div>
           <div class="charcount-text">
             <button class="tweet-button" type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+            <output id= "counter" name="counter" class="counter" for="tweet-text">140</output>
             </div>
             </form>
       </section>
