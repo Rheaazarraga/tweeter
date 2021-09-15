@@ -59,45 +59,50 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+
     <!-- NEW TWEET -->
       <section class="new-tweet">
         <div class= "compose-hum">
         <h2>Compose Tweet</h2>
         </div>
+
         <div class="humming">
         <h3><strong>What are you humming about?</strong></h3>
+        </div>
+
         <form method="POST" action="tweets/">
           <!-- <label for="tweet-text"></label> -->
-          <textarea name= "text" id="tweet-box"></textarea>
-          </div>
+          <textarea name="text" id="tweet-box"></textarea>
+
           <div class="charcount-text">
             <button class="tweet-button" type="submit">Tweet</button>
             <output id= "counter" name="counter" class="counter" for="tweet-text">140</output>
             </div>
+
             </form>
             </section>
 
             <!-- DISPLAYED EXISTING TWEETS -->
-
       <section class="existing-tweets-container">
         <article class="existing-tweets">
 
           <header class="existing-tweets-header"><b>Name</b></header>
 
 
-          <div class="existing-tweets-body"></div>
+          <div id="existing-tweets-body"> <strong>Ma body is ok</strong></div>
 
 
               <footer class="existing-tweets-footer"><b>days ago</b>
                 <div class="tweet-icons">
-                <i class="fas fa-flag"></i>
-                <i class="fas fa-retweet"></i>
-                <i class="fas fa-heart"></i>
+                <i id="icon1" class="fas fa-flag"></i>
+                <i id="icon2" class="fas fa-retweet"></i>
+                <i id="icon3" class="fas fa-heart"></i>
               </div>
             </footer>
-            </div>
+
+
           </article>
-          </section>
+        </section>
      
     </main>
   </body>
