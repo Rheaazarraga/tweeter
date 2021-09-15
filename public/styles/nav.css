@@ -1,8 +1,5 @@
   nav {
     background-color: #fab47b ;
-    /* background-image: url("https://www.transparenttextures.com/patterns/psychedelic.png");
-    /* background-image: url("https://www.transparenttextures.com/patterns/subtle-grey.png"); */
-    /* background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png"); */
     padding-left: 1.5em;
     padding: 0.5em 1.5em;
     display: flex;
@@ -11,10 +8,12 @@
     font-family: Source-Sans-Pro, Sans-Serif;
        /* determines the depth of elements in a webpage - as z-index value of an element increases, it will be positioned infront of other elements - 3D overlay */
     z-index: 1;
+    position:fixed;
+    top: 0;
+    width: 100%;
   }
 
-    /* tweeter icon */
-
+    /* tweeter logo */
    #logo {
     font-family: Bungee, Sans-Serif;
     font-size: 2em;
