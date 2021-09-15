@@ -34,8 +34,9 @@ font-family: "Bungee", cursive;
 
  .container {
    font-size: 100%;
-   width: 16%;
+   width: 45%;
    background-color: #fab47b ;
    justify-content: center;
    align-self: center;
  }
+

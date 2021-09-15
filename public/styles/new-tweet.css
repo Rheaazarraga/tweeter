@@ -14,7 +14,10 @@
   background-color: #f4f1ec;
   border-radius: 25px;
   border-bottom-width: 1px;
-  padding: 55px;
+  height: 80px;
+  padding: 10px;
+  font-family: Bungee;
+
 }
 
 /* "compose tweet" */
