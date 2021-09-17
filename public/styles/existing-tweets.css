@@ -7,6 +7,8 @@
   padding: 8px;
   margin-top: 30px;
   font-family: Bungee;
+  border-radius: 25px;
+  border-bottom-width: 1px;
 }
 
 
@@ -35,6 +37,7 @@
 
 .existing-tweets-body {
   display: block;
+  text-align: center;
   padding: 0.5em 0;
   border-bottom: 1px dotted #cc8cbe;
 }
@@ -45,8 +48,7 @@
 }
 
 .tweet-icons {
-  /* display: flex;
-  flex-direction: row-reverse; */
+
   display: inline-block;
   position: absolute; right: 0.5rem;
   margin: 0 0.5rem;

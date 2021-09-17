@@ -16,7 +16,7 @@ $(document).ready(function () {
       content: {
         text: "If I have seen further it is by standing on the shoulders of giants",
       },
-      created_at: 1461116232227,
+      created_at: 1631661600000,
     },
     {
       user: {
@@ -27,7 +27,7 @@ $(document).ready(function () {
       content: {
         text: "Je pense , donc je suis",
       },
-      created_at: 1461113959088,
+      created_at:  1631575200000,
     },
   ];
   const renderTweets = function (tweets) {
