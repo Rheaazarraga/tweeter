@@ -1,23 +1,40 @@
 .existing-tweets {
-  height: 150px;
+  /* height: 150px; */
   display: flex;
   flex-direction: column;
   position: relative;
   border: 2px dotted white;
   padding: 8px;
-  margin-top: 30px;  
+  margin-top: 30px;
+  font-family: Bungee;
 }
 
 
 .existing-tweets-header  {
   display: block;
-  padding: 0.5 0;
+  padding: 0.5em 0;
 
 }
 
-#existing-tweets-body {
+.tweeter-avatar {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.user-name {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.user-handle {
+  display: inline-block;
+  margin: 0 0.5rem;
+  position: absolute; right: 0.5rem;
+
+}
+
+.existing-tweets-body {
   display: block;
-  height: 80px;
   padding: 0.5em 0;
   border-bottom: 1px dotted #cc8cbe;
 }
