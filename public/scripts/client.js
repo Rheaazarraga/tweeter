@@ -52,15 +52,15 @@ $(document).ready(function() {
     const data = $(this).serialize();
 
     const tweetPost = function(data) {
-      $.ajax({ url: "/tweets", method: "POST", data: data }).then(
-        $(".existing-tweets-container").empty(),
-        $("#tweet-box").val(""),
-        $(".alert").empty(),
-        $("#counter").first().val(140),
-        loadTweets()
-      );
+      $.ajax({ url: "/tweets", method: "POST", data: data }).then(() => {
+        $(".existing-tweets-container").empty();
+        $("#tweet-box").val("");
+        $(".alert").empty();
+        $("#counter").first().val(140);
+        loadTweets();
+      });
     };
-
+    
     const errorHandler = function() {
       if (tweetBox.length === 0) {
         $(".alert")
