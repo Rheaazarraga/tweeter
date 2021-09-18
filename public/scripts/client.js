@@ -4,15 +4,15 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-$(document).ready(function () {
-  const renderTweets = function (tweets) {
+$(document).ready(function() {
+  const renderTweets = function(tweets) {
     for (const tweet of tweets) {
       const tweetMsg = createTweetElement(tweet);
       $(".existing-tweets-container").prepend(tweetMsg);
     }
   };
 
-  const createTweetElement = function (tweet) {
+  const createTweetElement = function(tweet) {
     const timeStamp = timeago.format(tweet.created_at);
     let $tweet = `<article class="existing-tweets">
 
@@ -40,18 +40,18 @@ $(document).ready(function () {
     return $tweet;
   };
 
-  const loadTweets = function () {
+  const loadTweets = function() {
     $.ajax({ url: "/tweets", method: "GET" })
       .then(result => renderTweets(result))
       .catch(error => console.log(`Error:`, error));
   };
 
-  const submitHandler = function (event) {
+  const submitHandler = function(event) {
     event.preventDefault();
     let tweetBox = $("#tweet-box").val();
     const data = $(this).serialize();
 
-    const tweetPost = function (data) {
+    const tweetPost = function(data) {
       $.ajax({ url: "/tweets", method: "POST", data: data }).then(
         $(".existing-tweets-container").empty(),
         $("#tweet-box").val(""),
@@ -61,13 +61,12 @@ $(document).ready(function () {
       );
     };
 
-    const errorHandler = function () {
+    const errorHandler = function() {
       if (tweetBox.length === 0) {
         $(".alert")
           .empty()
           .append("<p>Error: Your tweet needs to be at least 1 character!</p>");
-      }
-       else if (tweetBox.length > 140) {
+      } else if (tweetBox.length > 140) {
         $(".alert")
           .empty()
           .append("<p>Error: You've reached the max amount of characters!</p>");
