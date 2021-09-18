@@ -8,7 +8,6 @@ $(document).ready(function () {
 
     //targets the text-box input
     let $textCount = $forms.find('#tweet-box');
-    console.log('textCount', $textCount);
 
     //captures the length of our tweet
     let textLength = $textCount.val().length;
@@ -16,7 +15,6 @@ $(document).ready(function () {
 
     //caputres the value of counter
     let counterColor = $('#counter').val(charLeft);
-    console.log('counter', counterColor);
 
     //if length of tweet input is >140 characters, 0 characters and within range
     //want to display or hide error msgs based on these scenarios
