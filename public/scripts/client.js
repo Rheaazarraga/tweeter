@@ -12,6 +12,12 @@ $(document).ready(function() {
     }
   };
 
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   const createTweetElement = function(tweet) {
     const timeStamp = timeago.format(tweet.created_at);
     let $tweet = `<article class="existing-tweets">
@@ -23,7 +29,7 @@ $(document).ready(function() {
     </header>
 
 
-  <div class="existing-tweets-body"> <strong>${tweet.content.text}</strong></div>
+  <div class="existing-tweets-body"> <strong>${escape(tweet.content.text)}</strong></div>
 
 
       <footer class="existing-tweets-footer"><b>${timeStamp}</b>
