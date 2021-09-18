@@ -9,6 +9,8 @@
   font-family: Bungee;
   border-radius: 25px;
   border-bottom-width: 1px;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 
