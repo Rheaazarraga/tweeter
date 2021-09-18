@@ -5,7 +5,6 @@
  */
 
 $(document).ready(function () {
-
   const renderTweets = function (tweets) {
     for (const tweet of tweets) {
       const tweetMsg = createTweetElement(tweet);
@@ -42,9 +41,33 @@ $(document).ready(function () {
   };
 
   const loadTweets = function () {
-    $.ajax({ url: "/tweets", method: "GET" }).then(result => renderTweets(result))
-    .catch(error => console.log(`Error:`, error))
+    $.ajax({ url: "/tweets", method: "GET" })
+      .then(result => renderTweets(result))
+      .catch(error => console.log(`Error:`, error));
   };
 
+  const submitHandler = function (event) {
+    event.preventDefault();
+    let tweetBox = $("#tweet-box").val();
+    const data = $(this).serialize();
+
+    const tweetPost = function () {
+      $.ajax({ url: "/tweets", method: "POST", data: data })
+      .then($(".existing-tweets-container").empty(),loadTweets(), $('#tweet-box').val(''));
+    };
+
+    const errorHandler = function () {
+      if (tweetBox.length === 0) {
+        $(".alert").empty().append("<p>Error: Your tweet needs to be at least 1 character!</p>");
+      }
+      if (tweetBox.length > 140) {
+        $(".alert").empty().append("<p>Error: You've reached the max amount of characters!</p>");
+      } else {
+        tweetPost(data);
+      }
+    };
+    errorHandler();
+  };
+  $("form").on("submit", submitHandler);
   loadTweets();
 });

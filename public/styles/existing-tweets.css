@@ -58,6 +58,12 @@
 
 }
 
+.alert {
+  display: inline-block;
+  margin: 0 0.5rem;
+  color: #f373d7;
+}
+
 .existing-tweets:hover {
   box-shadow: 8px 8px #ee89d8;
 }
