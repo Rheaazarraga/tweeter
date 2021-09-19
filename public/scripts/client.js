@@ -8,12 +8,12 @@ $(document).ready(function() {
   const renderTweets = function (tweets) {
     for (const tweet of tweets) {
       const tweetMsg = createTweetElement(tweet);
-      $(".existing-tweets-container").prepend(tweetMsg);
+      $('.existing-tweets-container').prepend(tweetMsg);
     }
   };
 
   const escape = function(str) {
-    let div = document.createElement("div");
+    let div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
@@ -48,37 +48,37 @@ $(document).ready(function() {
   };
 
   const loadTweets = function() {
-    $.ajax({ url: "/tweets", method: "GET" })
+    $.ajax({ url: '/tweets', method: 'GET' })
       .then(result => renderTweets(result))
       .catch(error => console.log(`Error:`, error));
   };
 
   const submitHandler = function(event) {
     event.preventDefault();
-    let tweetBox = $("#tweet-box").val();
+    let tweetBox = $('#tweet-box').val();
     const data = $(this).serialize();
 
     const tweetPost = function(data) {
-      $.ajax({ url: "/tweets", method: "POST", data: data }).then(() => {
-        $(".existing-tweets-container").empty();
-        $("#tweet-box").val("");
-        $(".alert").empty();
-        $("#counter").first().val(140);
+      $.ajax({ url: '/tweets', method: 'POST', data: data }).then(() => {
+        $('.existing-tweets-container').empty();
+        $('#tweet-box').val('');
+        $('.alert').empty();
+        $('#counter').first().val(140);
         loadTweets();
       });
     };
 
     const errorHandler = function() {
       if (tweetBox.length === 0) {
-        $(".alert")
+        $('.alert')
           .empty()
-          .append("<p>Error: Your tweet needs to be at least 1 character!</p>");
-        $(".alert").slideDown();
+          .append('<p>Error: Your tweet needs to be at least 1 character!</p>');
+        $('.alert').slideDown('slow');
       } else if (tweetBox.length > 140) {
-        $(".alert")
+        $('.alert')
           .empty()
-          .append("<p>Error: You've reached the max amount of characters!</p>");
-        $(".alert").slideDown();
+          .append('<p>Error: You\'ve reached the max amount of characters!</p>');
+        $('.alert').slideDown('slow');
       } else {
         tweetPost(data);
       }
@@ -86,7 +86,7 @@ $(document).ready(function() {
     errorHandler();
   };
   $('form').on('submit', submitHandler),
-  $('tweet-box').on('keyup', () => {
+  $('#tweet-box').on('keyup', () => {
     $('.alert').slideUp('slow');
   });
   loadTweets();
