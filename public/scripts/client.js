@@ -73,12 +73,12 @@ $(document).ready(function() {
         $('.alert')
           .empty()
           .append('<p>Error: Your tweet needs to be at least 1 character!</p>');
-        $('.alert').slideDown('slow');
+        $('.alert').hide().slideDown('slow');
       } else if (tweetBox.length > 140) {
         $('.alert')
           .empty()
           .append('<p>Error: You\'ve reached the max amount of characters!</p>');
-        $('.alert').slideDown('slow');
+        $('.alert').hide().slideDown('slow');
       } else {
         tweetPost(data);
       }
