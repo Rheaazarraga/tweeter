@@ -41,7 +41,7 @@
   display: block;
   text-align: center;
   padding: 0.5em 0;
-  border-bottom: 1px dotted #cc8cbe;
+  border-bottom: 1px dotted #f373d7;
 }
 
 .existing-tweets-footer {
@@ -58,12 +58,6 @@
   -webkit-text-stroke: 0.5px white;
   padding: 5px;
 
-}
-
-.alert {
-  display: inline-block;
-  margin: 0 0.5rem;
-  color: #f373d7;
 }
 
 .existing-tweets:hover {
