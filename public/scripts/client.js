@@ -52,7 +52,7 @@ $(document).ready(function() {
       .then(result => renderTweets(result))
       .catch(error => console.log(`Error:`, error));
   };
-
+  let error = false;
   const submitHandler = function(event) {
     event.preventDefault();
     let tweetBox = $('#tweet-box').val();
@@ -74,20 +74,41 @@ $(document).ready(function() {
           .empty()
           .append('<p>Error: Your tweet needs to be at least 1 character!</p>');
         $('.alert').hide().slideDown('slow');
+        error = true
       } else if (tweetBox.length > 140) {
         $('.alert')
           .empty()
           .append('<p>Error: You\'ve reached the max amount of characters!</p>');
         $('.alert').hide().slideDown('slow');
+        error = true;
       } else {
         tweetPost(data);
+        error = false;
       }
     };
     errorHandler();
   };
+
   $('form').on('submit', submitHandler),
   $('#tweet-box').on('keyup', () => {
-    $('.alert').slideUp('slow');
+    if (error === true) {
+     $('.alert').slideUp('slow');
+     error = false;
+   };
   });
+
+  //when clicking create tweet, new-tweet section will slide down for user to create a tweet. Click the button again, new-tweet section will slide up
+  $('#create-tweet').on('click', () => {
+    if($('#new-tweet').hasClass('hide-tweet')) {
+      $('#new-tweet').slideDown('slow', function() {
+        $(this).removeClass('hide-tweet');
+      });
+    } else {
+      $('#new-tweet').slideUp('slow', function() {
+        $(this).addClass('hide-tweet');
+      });
+    };
+  });
+
   loadTweets();
 });
