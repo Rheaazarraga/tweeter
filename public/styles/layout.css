@@ -16,27 +16,33 @@ html {
 
 body {
   color: #ffffff;
-  background-color: #fab47b ;
+  background-color: black;
+  background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");
   font-size: 100%;
   font-family: "Source Sans Pro", sans-serif;
   display: flex;
   flex-direction: column;
 }
 
-
 span.logo {
 font-family: "Bungee", cursive;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
-
  .container {
    font-size: 100%;
    width: 45%;
-   background-color: #fab47b ;
+   background-color: black;
+   /* background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png"); */
+
    justify-content: center;
+  
    align-self: center;
  }
 
+ @media screen and (min-width: 768px) {
+  body {
+    flex-direction: row;
+    background-color: rgba(117, 84, 103, 0.993);
+   background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");
+  }
+}

@@ -80,7 +80,7 @@ $(document).ready(function() {
       if (tweetBox.length === 0) {
         $('.alert')
           .empty()
-          .append('<p>Brevity is the soul of wit, but your tweet does need at least 1 character long...</p>');
+          .append('<p>Brevity is the soul of wit, but your tweet does need to be at least 1 character long...</p>');
         $('.alert').hide().slideDown('slow');
         error = true
         // If tweet exceeds max characters

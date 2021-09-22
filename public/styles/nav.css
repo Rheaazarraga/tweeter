@@ -1,5 +1,7 @@
   nav {
-    background-color: #fab47b ;
+    background-color: black ;
+    background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");
+    border-bottom: solid white;
     padding-left: 1.5em;
     padding: 0.5em 1.5em;
     display: flex;
@@ -15,10 +17,8 @@
     /* tweeter logo */
    #logo {
     font-family: Bungee, Sans-Serif;
-    font-size: 2em;
+    font-size: 200%;
     color: white;
-
-
   }
 
   .nav-left {
@@ -41,7 +41,7 @@
     
   }
 
-  #create-tweet:hover {
+  .nav-right:hover {
     border-radius: 30px;
     box-shadow: 1px 1px #ee89d8;
     padding: 0.2em;

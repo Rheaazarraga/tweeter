@@ -1,18 +1,23 @@
 .existing-tweets {
-  /* height: 150px; */
   display: flex;
   flex-direction: column;
-  position: relative;
+  /* position: relative; */
   border: 2px dotted white;
   padding: 8px;
-  margin-top: 30px;
   font-family: Bungee;
   border-radius: 25px;
   border-bottom-width: 1px;
   word-wrap: break-word;
   word-break: break-all;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  margin-top: 1em;
 }
 
+.existing-tweets-container {
+  margin-top: 5em;
+  margin-bottom: 2.5em;
+}
 
 .existing-tweets-header  {
   display: block;
