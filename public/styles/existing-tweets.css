@@ -1,7 +1,8 @@
 .existing-tweets {
+  width: 70%;
   display: flex;
   flex-direction: column;
-  /* position: relative; */
+  position: relative;
   border: 2px dotted white;
   padding: 8px;
   font-family: Bungee;
@@ -9,14 +10,19 @@
   border-bottom-width: 1px;
   word-wrap: break-word;
   word-break: break-all;
-  margin-right: 0.5em;
-  margin-left: 0.5em;
-  margin-top: 1em;
+  /* margin-right: 0.5em; */
+  /*margin-left: 0.5em; */
+  margin-top: 1.5em;
 }
 
 .existing-tweets-container {
-  margin-top: 5em;
-  margin-bottom: 2.5em;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .existing-tweets-header  {
@@ -25,10 +31,10 @@
 
 }
 
-.tweeter-avatar {
+/* .tweeter-avatar {
   display: inline-block;
   margin: 0 0.5rem;
-}
+} */
 
 .user-name {
   display: inline-block;
@@ -51,7 +57,6 @@
 
 .existing-tweets-footer {
   display: block;
-  
 }
 
 .tweet-icons {

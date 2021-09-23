@@ -29,20 +29,58 @@ font-family: "Bungee", cursive;
 }
 
  .container {
+   display: flex;
+   flex-direction: column;
    font-size: 100%;
-   width: 45%;
+   width: 100%;
    background-color: black;
    /* background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png"); */
 
    justify-content: center;
-  
    align-self: center;
  }
 
  @media screen and (min-width: 768px) {
   body {
+    display: flex;
     flex-direction: row;
-    background-color: rgba(117, 84, 103, 0.993);
+    background-color: black;
    background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");
+   /* outline: khaki solid 2px; */
+  }
+
+  main {
+    margin-top: 5em;
+    /* outline: purple solid 2px; */
+  
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    /* outline: gold solid 2px; */
+  }
+
+  #main-header {
+    width: 30%;
+    min-width: 320px;
+    max-width: 30vw;
+    /* outline: limegreen solid 2px; */
+  }
+
+  #new-tweet {
+    display: flex;
+
+  }
+  .new-tweet {
+    width: 100%;
+    margin-top: 2em;
+    /* outline: orangered solid 2px; */
+  }
+
+  .existing-tweets {
+    width: 100%;
+    margin-top: 1em;
+    /* outline: cyan solid 2px; */
   }
 }

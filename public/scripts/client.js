@@ -17,10 +17,12 @@ $(document).ready(function() {
   // Rendering dynamic tweets dynamically from JS code and emptying out the existing-tweets-container from html
   const createTweetElement = function(tweet) {
     const timeStamp = timeago.format(tweet.created_at);
+
     let $tweet = `<article class="existing-tweets">
 
   <header class="existing-tweets-header">
-    <div class="tweeter-avatar"> <img src="${tweet.user.avatars}"/> </div>
+    
+    <img src=${tweet.user.avatars}/>
     <div class="user-name"><b>${tweet.user.name}</b></div>
     <div class="user-handle"><b>${tweet.user.handle}</b></div>
     </header>
