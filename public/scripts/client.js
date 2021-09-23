@@ -40,7 +40,6 @@ $(document).ready(function() {
       </div>
     </footer>
 
-
   </article>`;
 
     return $tweet;
