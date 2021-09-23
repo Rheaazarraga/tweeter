@@ -22,18 +22,6 @@
   font-family: Bungee;
 }
 
-/* "compose tweet" */
-/* .compose-hum { */
-  /* display: center; */
-  /* display: flex;
-  flex-direction: column;
-  color: #ec68db;
-  -webkit-text-stroke: 0.5px #ee89d8;
-  text-align: center;
-  align-self: center;
-  font-family: Bungee;
-} */
-
 /* "what are you humming about?" */
 .humming {
   color: white;

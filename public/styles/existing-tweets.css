@@ -3,15 +3,13 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  border: 2px dotted white;
+  border: 2px solid white;
   padding: 8px;
   font-family: Bungee;
   border-radius: 25px;
   border-bottom-width: 1px;
   word-wrap: break-word;
   word-break: break-all;
-  /* margin-right: 0.5em; */
-  /*margin-left: 0.5em; */
   margin-top: 1.5em;
 }
 
@@ -31,10 +29,6 @@
 
 }
 
-/* .tweeter-avatar {
-  display: inline-block;
-  margin: 0 0.5rem;
-} */
 
 .user-name {
   display: inline-block;
@@ -52,7 +46,7 @@
   display: block;
   text-align: center;
   padding: 0.5em 0;
-  border-bottom: 1px dotted #f373d7;
+  border-bottom: 1px solid #f373d7;
 }
 
 .existing-tweets-footer {

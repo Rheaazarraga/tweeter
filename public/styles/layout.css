@@ -35,7 +35,6 @@ font-family: "Bungee", cursive;
    width: 100%;
    background-color: black;
    /* background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png"); */
-
    justify-content: center;
    align-self: center;
  }
@@ -45,7 +44,7 @@ font-family: "Bungee", cursive;
     display: flex;
     flex-direction: row;
     background-color: black;
-   background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");
+    background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");
    /* outline: khaki solid 2px; */
   }
 
@@ -58,11 +57,13 @@ font-family: "Bungee", cursive;
   .container {
     display: flex;
     flex-direction: column;
+    background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");
     /* outline: gold solid 2px; */
   }
 
   #main-header {
-    width: 30%;
+    width: 70%;
+    margin: 3em;
     min-width: 320px;
     max-width: 30vw;
     /* outline: limegreen solid 2px; */
@@ -82,5 +83,9 @@ font-family: "Bungee", cursive;
     width: 100%;
     margin-top: 1em;
     /* outline: cyan solid 2px; */
+  }
+
+  .existing-tweets.body {
+    background-color: black;
   }
 }
