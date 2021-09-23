@@ -47,10 +47,12 @@
   text-align: center;
   padding: 0.5em 0;
   border-bottom: 1px solid #f373d7;
+  margin-bottom: 0.5em;
 }
 
 .existing-tweets-footer {
   display: block;
+  padding: 0.5em;
 }
 
 .tweet-icons {
@@ -60,7 +62,6 @@
   margin: 0 0.5rem;
   color: #f373d7;
   -webkit-text-stroke: 0.5px white;
-  padding: 5px;
 
 }
 
