@@ -4,7 +4,7 @@
   flex-direction: column;
   position: relative;
   border: 2px solid white;
-  padding: 8px;
+  padding: 8.5px;
   font-family: Bungee;
   border-radius: 25px;
   border-bottom-width: 1px;
@@ -19,7 +19,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
 
