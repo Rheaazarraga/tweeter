@@ -39,7 +39,7 @@ font-family: "Bungee", cursive;
    align-self: center;
  }
 
- @media screen and (min-width: 768px) {
+ @media screen and (min-width: 730px) {
   body {
     display: flex;
     flex-direction: row;
@@ -69,10 +69,6 @@ font-family: "Bungee", cursive;
     /* outline: limegreen solid 2px; */
   }
 
-  #new-tweet {
-    display: flex;
-
-  }
   .new-tweet {
     width: 100%;
     margin-top: 2em;
@@ -80,6 +76,10 @@ font-family: "Bungee", cursive;
   }
 
   .existing-tweets {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-self: center;
     width: 100%;
     margin-top: 1em;
     /* outline: cyan solid 2px; */

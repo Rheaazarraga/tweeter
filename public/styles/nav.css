@@ -21,6 +21,15 @@
     color: white;
   }
 
+  #bird {
+    display: flex;
+    align-self: center;
+    color: #f373d7;
+    -webkit-text-stroke: 0.5px white;
+    size: large;
+
+  }
+
   .nav-left {
     display: flex;
     align-items: flex-end;
@@ -31,6 +40,7 @@
     justify-content: space-between;
     align-items: center;
   }
+
 
   #create-tweet {
     font-family: Bungee;

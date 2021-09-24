@@ -30,11 +30,11 @@
   font-family: Bungee;
 }
 
-#bird {
+/* #bird {
   display: inline-block;
   color: #f373d7;
   -webkit-text-stroke: 0.5px white;
-}
+} */
 
 /* character count */
 .charcount-text {
@@ -58,12 +58,16 @@
   cursor: pointer;
 }
 
-
 .alert {
-  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1em;
+  border: dotted ;
+  border-radius: 25px;
+  padding: 0.5em;
   font-family: Bungee;
-  margin: 0 0.5rem;
-  color: #ec68db;
+  color: rgb(102, 255, 0);
 }
 
 .hide-tweet {

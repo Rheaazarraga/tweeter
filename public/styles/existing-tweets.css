@@ -31,13 +31,14 @@
 .user-name {
   display: inline-block;
   margin: 0 0.5rem;
+  top: 25px;
 }
 
 .user-handle {
   display: inline-block;
   margin: 0 0.5rem;
   position: absolute; right: 0.5rem;
-
+  top: 25px;
 }
 
 .existing-tweets-body {
