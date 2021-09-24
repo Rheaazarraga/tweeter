@@ -62,11 +62,33 @@ font-family: "Bungee", cursive;
   }
 
   #main-header {
-    width: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
     margin: 3em;
     min-width: 320px;
     max-width: 30vw;
     /* outline: limegreen solid 2px; */
+  }
+
+  .avatar {
+    height: auto;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    top: 50vh;
+  }
+
+  .name-text {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    position: fixed;
+    top: 70vh; 
   }
 
   .new-tweet {

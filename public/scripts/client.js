@@ -118,7 +118,7 @@ $(document).ready(function() {
     }
     $('#scroll-btn').on('click', () => {
       topFunction();
-    })
+    });
     
  // #text-box event listener to remove alert/error msg when typing
   $('form').on('submit', submitHandler),
