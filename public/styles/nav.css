@@ -26,8 +26,6 @@
     align-self: center;
     color: #f373d7;
     -webkit-text-stroke: 0.5px white;
-    size: large;
-
   }
 
   .nav-left {
@@ -48,8 +46,7 @@
     border: none; 
     color: white;
     background:  transparent;
-    cursor: pointer;
-    
+    cursor: pointer; 
   }
 
   .nav-right:hover {
@@ -60,5 +57,4 @@
   
   .arrow {
   color: #f373d7;
-  
   }

@@ -30,12 +30,6 @@
   font-family: Bungee;
 }
 
-/* #bird {
-  display: inline-block;
-  color: #f373d7;
-  -webkit-text-stroke: 0.5px white;
-} */
-
 /* character count */
 .charcount-text {
   display: flex;
