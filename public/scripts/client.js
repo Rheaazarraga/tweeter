@@ -25,20 +25,16 @@ $(document).ready(function() {
     <img src=${tweet.user.avatars}/>
     <div class="user-name"><b>${tweet.user.name}</b></div>
     <div class="user-handle"><b>${tweet.user.handle}</b></div>
-    </header>
+  </header>
 
-
-  <div class="existing-tweets-body"> <strong>${escape(tweet.content.text)}</strong>
-  </div>
-
-
-      <footer class="existing-tweets-footer"><b>${timeStamp}</b>
-        <div class="tweet-icons">
-        <i id="icon1" class="fas fa-flag"></i>
-        <i id="icon2" class="fas fa-retweet"></i>
-        <i id="icon3" class="fas fa-heart"></i>
-      </div>
-    </footer>
+  <div class="existing-tweets-body"> <strong>${escape(tweet.content.text)}</strong></div>
+  <footer class="existing-tweets-footer"><b>${timeStamp}</b>
+    <div class="tweet-icons">
+      <i id="icon1" class="fas fa-flag"></i>
+      <i id="icon2" class="fas fa-retweet"></i>
+      <i id="icon3" class="fas fa-heart"></i>
+    </div>
+  </footer>
 
   </article>`;
 
@@ -135,13 +131,16 @@ $(document).ready(function() {
 
   // Upon clicking create a new tweet, the new-tweet section will slide down for user to create a tweet. Click the button again & new-tweet section will slide up and be re-hidden
   $('#create-tweet').on('click', () => {
+    $('.alert').hide()
     if($('#new-tweet').hasClass('hide-tweet')) {
       $('#new-tweet').slideDown('slow', function() {
         $(this).removeClass('hide-tweet');
+        $('.alert').empty();
       });
     } else {
       $('#new-tweet').slideUp('slow', function() {
         $(this).addClass('hide-tweet');
+        $('.alert').empty();
       });
     };
   });
