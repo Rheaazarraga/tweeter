@@ -77,14 +77,14 @@ $(document).ready(function() {
       if (tweetBox.length === 0) {
         $('.alert')
           .empty()
-          .append('<p><i class="fas fa-exclamation-circle"></i> Brevity is the soul of wit, but your tweet does need to be at least 1 character long...</p>');
+          .append('<p><i class="fas fa-exclamation-circle"></i><strong> Brevity is the soul of wit, but your tweet does need to be at least 1 character long...</strong</p>');
         $('.alert').hide().slideDown('slow');
         error = true
         // If tweet exceeds max characters
       } else if (tweetBox.length > 140) {
         $('.alert')
           .empty()
-          .append('<p><i class="fas fa-exclamation-circle"></i> Looks like you\'ve reached the max amount of characters!</p>');
+          .append('<p><i class="fas fa-exclamation-circle"></i><strong> Looks like you\'ve reached the max amount of characters!</strong></p>');
         $('.alert').hide().slideDown('slow');
         error = true;
       } else {

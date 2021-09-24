@@ -1,5 +1,5 @@
   nav {
-    background-color: black ;
+    background-color: #f373d7 ;
     background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");
     border-bottom: solid white;
     padding-left: 1.5em;
@@ -24,7 +24,8 @@
   #bird {
     display: flex;
     align-self: center;
-    color: #f373d7;
+    font-size: larger;
+    color: white;
     -webkit-text-stroke: 0.5px white;
   }
 
@@ -39,10 +40,10 @@
     align-items: center;
   }
 
-
   #create-tweet {
     font-family: Bungee;
-    padding: 0;
+    font-size: 130%;
+    padding: 0.2em;
     border: none; 
     color: white;
     background:  transparent;
@@ -51,10 +52,10 @@
 
   .nav-right:hover {
     border-radius: 30px;
-    box-shadow: 1px 1px #ee89d8;
+    box-shadow: 1px 1px white;
     padding: 0.2em;
   }
   
   .arrow {
-  color: #f373d7;
+  color: white;
   }

@@ -5,9 +5,10 @@
   position: relative;
   border: 2px solid white;
   padding: 8.5px;
-  font-family: Bungee;
+  font-size: 150%;
   border-radius: 25px;
   border-bottom-width: 1px;
+  border-block-color: #f373d7;
   word-wrap: break-word;
   word-break: break-all;
   margin-top: 1.5em;
@@ -31,7 +32,6 @@
 .user-name {
   display: inline-block;
   margin: 0 0.5rem;
-  top: 25px;
 }
 
 .user-handle {

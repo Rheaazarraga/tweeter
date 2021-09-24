@@ -19,15 +19,16 @@
   border-bottom-width: 1px;
   height: 100px;
   padding: 10px;
-  font-family: Bungee;
+  font-size: 150%;
+  font-weight: bolder;
 }
 
 /* "what are you humming about?" */
 .humming {
+  font-size: 140%;
   color: white;
   text-align: center;
   align-self: center;
-  font-family: Bungee;
 }
 
 /* character count */
@@ -38,17 +39,17 @@
   font-family: Bungee, sans-serif;
   color: white;
   padding-right: 10px;
-  font-size: 100%;
+  font-size: 140%;
   margin-top: 1em;
 }
 
 /* tweet button */
 .tweet-button {
-  font-weight: bold;
+  font-size: x-large;
   background-color: #f373f7;
   color: #ffffff;
-  border-radius: 8px;
-  padding: 1.5 px;
+  border-radius: 15px;
+  padding: 3px;
   cursor: pointer;
 }
 
@@ -60,7 +61,7 @@
   border: dotted ;
   border-radius: 25px;
   padding: 0.5em;
-  font-family: Bungee;
+  font-size: 125%;
   color: rgb(102, 255, 0);
 }
 
