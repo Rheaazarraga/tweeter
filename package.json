@@ -9,7 +9,7 @@
   },
   "author": "Rhea Azarraga",
   "url": "https://github.com/Rheaazarraga/tweeter",
-  "homepage": "https://github.com/Rheaazarraga/tweeter",
+  "homepage": "https://github.com/Rheaazarraga",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
