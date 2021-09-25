@@ -6,7 +6,9 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -25,20 +27,34 @@ body {
 }
 
 span.logo {
-font-family: "Bungee", cursive;
+  font-family: "Bungee", cursive;
 }
 
- .container {
-   display: flex;
-   flex-direction: column;
-   font-size: 100%;
-   width: 100%;
-   background-color: black;
-   justify-content: center;
-   align-self: center;
- }
+.container {
+  display: flex;
+  flex-direction: column;
+  font-size: 100%;
+  width: 100%;
+  background-color: black;
+  justify-content: center;
+  align-self: center;
+}
 
- @media screen and (min-width: 730px) {
+#scroll-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #f37ff3;
+  background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");
+  border-radius: 60%;
+  color: white;
+  cursor: pointer;
+  padding: 25px;
+}
+
+@media screen and (min-width: 730px) {
   body {
     display: flex;
     flex-direction: row;
@@ -48,7 +64,6 @@ font-family: "Bungee", cursive;
 
   main {
     margin-top: 5em;
-  
   }
 
   .container {
@@ -72,18 +87,7 @@ font-family: "Bungee", cursive;
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    top: 50vh;
-  }
-
-  .name-text {
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: large;
-    position: fixed;
-    top: 70vh; 
+    text-align: center;
   }
 
   .new-tweet {
