@@ -1,7 +1,7 @@
 // Leverage the createTweetElement function by passing the tweet object to it, then using the returned jQuery object by appending it to the #tweets-container section
 
 $(document).ready(function() {
-  const renderTweets = function (tweets) {
+  const renderTweets = function(tweets) {
     for (const tweet of tweets) {
       const tweetMsg = createTweetElement(tweet);
       $('.existing-tweets-container').prepend(tweetMsg);
@@ -46,7 +46,7 @@ $(document).ready(function() {
     $.ajax({ url: '/tweets', method: 'GET' })
     // Result = results, passing into renderTweets(result)
       .then(result => renderTweets(result))
-       // If error, console.log error
+    // If error, print it
       .catch(error => console.log(`Error:`, error));
   };
 
@@ -61,12 +61,12 @@ $(document).ready(function() {
     // Function to take .JSON data from /tweets to pass
     const tweetPost = function(data) {
       // Set #tweet-box to empty on successful submission & set .existing-tweets to empty to prevent duplicate messages
-       $.ajax({ url: '/tweets', method: 'POST', data: data }).then(() => {
-         $('.existing-tweets-container').empty();
-         $('#tweet-box').val('');
-         // Remove .alert if it existed
-         $('.alert').empty();
-         // Set #counter value back up to 140
+      $.ajax({ url: '/tweets', method: 'POST', data: data }).then(() => {
+        $('.existing-tweets-container').empty();
+        $('#tweet-box').val('');
+        // Remove .alert if it existed
+        $('.alert').empty();
+        // Set #counter value back up to 140
         $('#counter').first().val(140);
         loadTweets();
       });
@@ -79,7 +79,7 @@ $(document).ready(function() {
           .empty()
           .append('<p><i class="fas fa-exclamation-circle"></i><strong> Brevity is the soul of wit, but your tweet does need to be at least 1 character long...</strong</p>');
         $('.alert').hide().slideDown('slow');
-        error = true
+        error = true;
         // If tweet exceeds max characters
       } else if (tweetBox.length > 140) {
         $('.alert')
@@ -88,7 +88,7 @@ $(document).ready(function() {
         $('.alert').hide().slideDown('slow');
         error = true;
       } else {
-        // Post tweet because no error exists
+        // Post tweet since no error exists
         tweetPost(data);
         error = false;
       }
@@ -96,43 +96,45 @@ $(document).ready(function() {
     errorHandler();
   };
     //Get the button:
-    scrollButton= document.getElementById("scroll-btn");
+  const scrollButton = document.getElementById("scroll-btn");
 
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
+  // When the user scrolls down 20px from the top of the page, show the button
+  window.onscroll = function() {
+    scrollFunction();
+  };
     
-    const scrollFunction = function() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollButton.style.display = "block";
-      } else {
-        scrollButton.style.display = "none";
-      }
+  const scrollFunction = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollButton.style.display = "block";
+    } else {
+      scrollButton.style.display = "none";
     }
+  };
     
-    // When the user clicks on the button, scroll to the top of the document
-    const topFunction = function() {
-      // For Safari
-      document.body.scrollTop = 0;
-      // For Chrome, Firefox, IE and Opera
-      document.documentElement.scrollTop = 0; 
-    }
-    $('#scroll-btn').on('click', () => {
-      topFunction();
-    });
+  // When the user clicks on the button, scroll to the top of the document
+  const topFunction = function() {
+    // For Safari
+    document.body.scrollTop = 0;
+    // For Chrome, Firefox, IE and Opera
+    document.documentElement.scrollTop = 0;
+  };
+  $('#scroll-btn').on('click', () => {
+    topFunction();
+  });
     
- // #text-box event listener to remove alert/error msg when typing
+  // #text-box event listener to remove alert/error msg when typing
   $('form').on('submit', submitHandler),
   $('#tweet-box').on('keyup', () => {
     if (error === true) {
-     $('.alert').slideUp('slow');
-     error = false;
-   };
+      $('.alert').slideUp('slow');
+      error = false;
+    }
   });
 
   // Upon clicking create a new tweet, the new-tweet section will slide down for user to create a tweet. Click the button again & new-tweet section will slide up and be re-hidden
   $('#create-tweet').on('click', () => {
-    $('.alert').hide()
-    if($('#new-tweet').hasClass('hide-tweet')) {
+    $('.alert').hide();
+    if ($('#new-tweet').hasClass('hide-tweet')) {
       $('#new-tweet').slideDown('slow', function() {
         $(this).removeClass('hide-tweet');
         $('.alert').empty();
@@ -142,7 +144,7 @@ $(document).ready(function() {
         $(this).addClass('hide-tweet');
         $('.alert').empty();
       });
-    };
+    }
   });
   loadTweets();
 });
