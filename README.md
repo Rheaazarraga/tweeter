@@ -30,7 +30,10 @@ This project by [Rhea Azarraga](https://github.com/Rheaazarraga) is created as p
  <br />
 
 <img width="900" src="https://user-images.githubusercontent.com/84409001/134787913-4f929cb2-adfa-48e5-aa21-ccda3f7ed24f.png" />
+<br />
+ <br />
 
+</p>
 
 
 ## Getting Started
