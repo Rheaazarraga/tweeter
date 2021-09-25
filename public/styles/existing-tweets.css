@@ -11,6 +11,7 @@
   border-block-color: #f373d7;
   overflow-wrap: break-word;
   word-break: unset;
+  margin-bottom: inherit;
 }
 
 .existing-tweets-container {
