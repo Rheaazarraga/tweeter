@@ -1,15 +1,15 @@
 {
   "name": "tweeter",
   "version": "1.0.0",
-  "description": "A twitter clone by Lighthouse Labs for web bootcamp students to learn front-end dev skillz",
+  "description": "A twitter clone by Lighthouse Labs for web bootcamp students to learn front-end dev skills",
   "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
     "local": "./node_modules/.bin/nodemon --watch server -e js server/index.js"
   },
   "author": "Rhea Azarraga",
-  "url": "https://github.com/Rheaazarraga/tweeter",
-  "homepage": "https://github.com/Rheaazarraga",
+  "url": "https://github.com/Rheaazarraga",
+  "homepage": "https://github.com/Rheaazarraga/tweeter",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
