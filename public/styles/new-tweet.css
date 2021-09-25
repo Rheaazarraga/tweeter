@@ -39,13 +39,13 @@
   font-family: Bungee, sans-serif;
   color: white;
   padding-right: 10px;
-  font-size: 140%;
+  font-size: 110%;
   margin-top: 1em;
 }
 
 /* tweet button */
 .tweet-button {
-  font-size: x-large;
+  font-size: large;
   background-color: #f373f7;
   color: #ffffff;
   border-radius: 15px;
