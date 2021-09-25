@@ -14,18 +14,23 @@ This project by [Rhea Azarraga](https://github.com/Rheaazarraga) is created as p
 <p align="center">
     
 <img src="https://user-images.githubusercontent.com/84409001/134787898-a56d1389-7911-47aa-bc4a-24cf33554f80.png" />
+    
     <br />
     
 <img src="https://user-images.githubusercontent.com/84409001/134787899-b42413d6-f63d-442a-9e80-94037558f79f.png" />
+    
     <br />
     
 <img src="https://user-images.githubusercontent.com/84409001/134787904-369f778f-c936-4a43-90fa-c4be869efd32.png" />
+    
     <br />
     
 <img src="https://user-images.githubusercontent.com/84409001/134787907-3a3f59b1-da3d-4727-a85f-40e1b8b04905.png" />
+    
     <br />
     
 <img src="https://user-images.githubusercontent.com/84409001/134787910-0878afcc-9498-49c8-984a-83d9277788f6.png" />
+    
     <br />
     
 <img src="https://user-images.githubusercontent.com/84409001/134787913-4f929cb2-adfa-48e5-aa21-ccda3f7ed24f.png" />
