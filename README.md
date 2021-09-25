@@ -13,23 +13,23 @@ This project by [Rhea Azarraga](https://github.com/Rheaazarraga) is created as p
 ---
 <p align="center">
     
-<img width="1250" src="https://user-images.githubusercontent.com/84409001/134787898-a56d1389-7911-47aa-bc4a-24cf33554f80.png" />
+<img width="1024" src="https://user-images.githubusercontent.com/84409001/134787898-a56d1389-7911-47aa-bc4a-24cf33554f80.png" />
     <br />
      <br />
     
-<img width="1250" src="https://user-images.githubusercontent.com/84409001/134787899-b42413d6-f63d-442a-9e80-94037558f79f.png" />
+<img width="1024" src="https://user-images.githubusercontent.com/84409001/134787899-b42413d6-f63d-442a-9e80-94037558f79f.png" />
  <br />
   <br />
     
-<img width="1250" src="https://user-images.githubusercontent.com/84409001/134787904-369f778f-c936-4a43-90fa-c4be869efd32.png" />
+<img width="1024" src="https://user-images.githubusercontent.com/84409001/134787904-369f778f-c936-4a43-90fa-c4be869efd32.png" />
 <br />
  <br />
 
-<img width="900" src="https://user-images.githubusercontent.com/84409001/134787910-0878afcc-9498-49c8-984a-83d9277788f6.png" />
+<img width="780" src="https://user-images.githubusercontent.com/84409001/134787910-0878afcc-9498-49c8-984a-83d9277788f6.png" />
 <br />
  <br />
 
-<img width="900" src="https://user-images.githubusercontent.com/84409001/134787913-4f929cb2-adfa-48e5-aa21-ccda3f7ed24f.png" />
+<img width="780" src="https://user-images.githubusercontent.com/84409001/134787913-4f929cb2-adfa-48e5-aa21-ccda3f7ed24f.png" />
 <br />
  <br />
 
