@@ -84,7 +84,7 @@ span.logo {
 
   .avatar {
     height: auto;
-    position: fixed;
+    position: absolute;
     justify-content: space-between;
     align-items: center;
     text-align: center;
